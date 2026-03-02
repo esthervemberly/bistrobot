@@ -1,11 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useAuthStore } from '@/stores/authStore';
 import styles from './page.module.css';
 
 export default function LoginPage() {
+    return (
+        <Suspense fallback={
+            <div className={styles.container}>
+                <div className={styles.card}>
+                    <div className={styles.logo}>
+                        <span className={styles.logoIcon}>🤖</span>
+                        <span className={styles.logoText}>BistroBot</span>
+                    </div>
+                    <h1 className={styles.title}>Loading...</h1>
+                </div>
+            </div>
+        }>
+            <LoginContent />
+        </Suspense>
+    );
+}
+
+function LoginContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const { user, initialized, loading, error: authError, initialize, signIn, signUp, signInWithGoogle, clearError } = useAuthStore();
