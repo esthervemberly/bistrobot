@@ -48,6 +48,9 @@ AI-powered restaurant chatbot built with Next.js, Supabase, and OpenRouter. Chat
 - **Session Management** — Middleware-based session refresh with `@supabase/ssr`
 
 ### UI/UX
+<img width="500" height="915" alt="image" src="https://github.com/user-attachments/assets/20fd2925-d977-48e6-a3a1-2f94ad00c899" />
+<img width="500" height="914" alt="image" src="https://github.com/user-attachments/assets/31466a96-4f63-48f8-8709-c2117e7cdfcd" />
+
 - **Dark Theme** — Full dark mode with CSS custom properties, Plus Jakarta Sans font
 - **Responsive Sidebar** — Collapsible navigation with mobile overlay, SVG icon system
 - **Product Cards in Chat** — AI responses include interactive product cards with images, prices, and add-to-cart buttons
