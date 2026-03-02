@@ -1,0 +1,105 @@
+.empty {
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.emptyIcon {
+    font-size: 64px;
+    margin-bottom: 8px;
+}
+
+.empty h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.empty p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.orderList {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.orderCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-secondary);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+    transition: border-color var(--transition-fast);
+}
+
+.orderCard:hover {
+    border-color: var(--border-primary);
+}
+
+.orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.orderNumber {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.orderDate {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-top: 2px;
+}
+
+.orderItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.orderItemTag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+.orderFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-secondary);
+}
+
+.orderMeta {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.orderTotal {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.orderCount {
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+
+.orderActions {
+    display: flex;
+    gap: 8px;
+}
