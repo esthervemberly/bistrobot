@@ -9,7 +9,7 @@ AI-powered restaurant chatbot built with Next.js, Supabase, and OpenRouter. Chat
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-LLM-purple)
 
 ---
-<img width="1710" height="910" alt="image" src="https://github.com/user-attachments/assets/05b12cba-17d9-4ac2-a2da-9238459b26ec" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/05b12cba-17d9-4ac2-a2da-9238459b26ec" />
 
 ## Features
 
@@ -21,26 +21,26 @@ AI-powered restaurant chatbot built with Next.js, Supabase, and OpenRouter. Chat
 - **Contextual Conversation** — Maintains sliding window of recent messages for multi-turn dialogue
 
 ### Menu & Ordering
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/2781f6d2-3d73-48a3-9bea-bdf029b59e05" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/2781f6d2-3d73-48a3-9bea-bdf029b59e05" />
 
 - **Dynamic Menu** — Products, categories, options, and promo codes stored in Supabase with local fallback data
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/25b20ced-229a-44d8-be79-11461e5d83a5" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/25b20ced-229a-44d8-be79-11461e5d83a5" />
 
 - **Product Customization** — Size options, add-ons (Extra Cheese, Bacon, Avocado) with price modifiers
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/50871cfe-5d4a-4d3e-9fbb-240c64982d12" />
+<img width="80%"  alt="image" src="https://github.com/user-attachments/assets/50871cfe-5d4a-4d3e-9fbb-240c64982d12" />
 
 - **Smart Cart** — Persistent cart (localStorage via Zustand), promo code support (SAVE10, WELCOME20, BISTRO15), tax calculation
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/05d8b6cb-608c-432a-a13a-5b54457a4aba" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/05d8b6cb-608c-432a-a13a-5b54457a4aba" />
 
 - **Order Tracking** — Real-time order timeline with live countdown timer, status progression (Confirmed → Preparing → Ready → Delivered)
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/ae8cdc1b-9fa4-4edf-9e8d-168cf9345f40" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/ae8cdc1b-9fa4-4edf-9e8d-168cf9345f40" />
 
 - **Category Filtering & Search** — Browse by category (Burgers, Pizza, Appetizers, Drinks, Desserts) or search by name/tags
 
 ### Authentication & Profiles
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/42cb99dd-f487-47a0-8030-55cf3dcb5d9e" />
+<img width="80%"  alt="image" src="https://github.com/user-attachments/assets/42cb99dd-f487-47a0-8030-55cf3dcb5d9e" />
 
-<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/d9d442f7-ef2c-4b2f-b018-c824fafeb817" />
+<img width="80%"  alt="image" src="https://github.com/user-attachments/assets/d9d442f7-ef2c-4b2f-b018-c824fafeb817" />
 
 - **Supabase Auth** — Email/password and Google OAuth sign-in
 - **User Profiles** — Display name, phone, dietary preferences stored in Supabase
@@ -48,8 +48,8 @@ AI-powered restaurant chatbot built with Next.js, Supabase, and OpenRouter. Chat
 - **Session Management** — Middleware-based session refresh with `@supabase/ssr`
 
 ### UI/UX
-<img width="500" height="915" alt="image" src="https://github.com/user-attachments/assets/20fd2925-d977-48e6-a3a1-2f94ad00c899" />
-<img width="500" height="914" alt="image" src="https://github.com/user-attachments/assets/31466a96-4f63-48f8-8709-c2117e7cdfcd" />
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/20fd2925-d977-48e6-a3a1-2f94ad00c899" />
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/31466a96-4f63-48f8-8709-c2117e7cdfcd" />
 
 - **Dark Theme** — Full dark mode with CSS custom properties, Plus Jakarta Sans font
 - **Responsive Sidebar** — Collapsible navigation with mobile overlay, SVG icon system
