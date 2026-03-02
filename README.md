@@ -9,6 +9,7 @@ AI-powered restaurant chatbot built with Next.js, Supabase, and OpenRouter. Chat
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-LLM-purple)
 
 ---
+<img width="1710" height="910" alt="image" src="https://github.com/user-attachments/assets/05b12cba-17d9-4ac2-a2da-9238459b26ec" />
 
 ## Features
 
@@ -20,13 +21,20 @@ AI-powered restaurant chatbot built with Next.js, Supabase, and OpenRouter. Chat
 - **Contextual Conversation** — Maintains sliding window of recent messages for multi-turn dialogue
 
 ### Menu & Ordering
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/2781f6d2-3d73-48a3-9bea-bdf029b59e05" />
 - **Dynamic Menu** — Products, categories, options, and promo codes stored in Supabase with local fallback data
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/25b20ced-229a-44d8-be79-11461e5d83a5" />
 - **Product Customization** — Size options, add-ons (Extra Cheese, Bacon, Avocado) with price modifiers
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/50871cfe-5d4a-4d3e-9fbb-240c64982d12" />
 - **Smart Cart** — Persistent cart (localStorage via Zustand), promo code support (SAVE10, WELCOME20, BISTRO15), tax calculation
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/05d8b6cb-608c-432a-a13a-5b54457a4aba" />
 - **Order Tracking** — Real-time order timeline with live countdown timer, status progression (Confirmed → Preparing → Ready → Delivered)
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/ae8cdc1b-9fa4-4edf-9e8d-168cf9345f40" />
 - **Category Filtering & Search** — Browse by category (Burgers, Pizza, Appetizers, Drinks, Desserts) or search by name/tags
 
 ### Authentication & Profiles
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/42cb99dd-f487-47a0-8030-55cf3dcb5d9e" />
+<img width="1710" height="986" alt="image" src="https://github.com/user-attachments/assets/d9d442f7-ef2c-4b2f-b018-c824fafeb817" />
 - **Supabase Auth** — Email/password and Google OAuth sign-in
 - **User Profiles** — Display name, phone, dietary preferences stored in Supabase
 - **Protected Routes** — Orders and profile pages require authentication via `AuthGuard` component
@@ -104,72 +112,6 @@ supabase/
 │   └── 002_products_schema.sql   # Products, categories, options, promos
 └── seed.sql                      # Menu data seed (13 items, 5 categories)
 ```
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- **Node.js** 18+
-- A [Supabase](https://supabase.com) project (free tier works)
-- An [OpenRouter](https://openrouter.ai) API key (free models available)
-- A [Hugging Face](https://huggingface.co) token (free)
-
-### 1. Install dependencies
-
-```bash
-npm install
-```
-
-### 2. Set up environment variables
-
-Create a `.env.local` file (or copy `.env.local.example`):
-
-```env
-# Supabase — https://supabase.com/dashboard → Project Settings → API
-NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-
-# OpenRouter — https://openrouter.ai/keys
-OPENROUTER_API_KEY=sk-or-v1-your-key-here
-OPENROUTER_CHAT_MODEL=google/gemma-3-4b-it:free
-
-# Hugging Face — https://huggingface.co/settings/tokens
-HF_TOKEN=hf_your-token-here
-```
-
-### 3. Set up Supabase
-
-Run the migrations in order from the Supabase SQL Editor:
-
-1. `supabase/migrations/001_auth_schema.sql` — Creates `profiles` and `orders` tables with RLS
-2. `supabase/migrations/002_products_schema.sql` — Creates `categories`, `products`, `product_options`, and `promo_codes` tables
-3. `supabase/seed.sql` — Populates the menu with 5 categories, 13 products, product options, and 3 promo codes
-
-### 4. Run the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) — you'll land on the AI chat interface.
-
----
-
-## Available Models
-
-The LLM is configurable via `OPENROUTER_CHAT_MODEL`. Some free options on OpenRouter:
-
-| Model | Speed | Quality |
-|-------|-------|---------|
-| `google/gemma-3-4b-it:free` | Fast | Good (default) |
-| `google/gemma-3-12b-it:free` | Medium | Better |
-| `meta-llama/llama-3.2-3b-instruct:free` | Slow (queued) | Good |
-| `qwen/qwen3-4b:free` | Fast | Good |
-| `mistralai/mistral-small-3.1-24b-instruct:free` | Medium | Very good |
-
-The system message compatibility layer automatically flattens `system` role messages for models that don't support them (e.g., Gemma).
 
 ---
 
